@@ -1,0 +1,13 @@
+.geoloc {
+
+    width: 250px;
+    height: 2.5rem;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgba(145, 245, 173, 1);
+}
+
+.geoloc:active, .geoloc:hover {
+
+    background-color: rgba(145, 245, 173, .5);
+}

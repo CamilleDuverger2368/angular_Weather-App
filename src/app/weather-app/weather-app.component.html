@@ -1,0 +1,6 @@
+<div *ngIf="asking === true" class="container center">
+    <app-add-city class="container"></app-add-city>
+    <div>OU</div>
+    <app-geoloc></app-geoloc>
+</div>
+<app-weather *ngIf="asking === false"></app-weather>

@@ -1,0 +1,29 @@
+<div class="container">
+    <button class="geoloc" (click)="return()">Return</button>
+    <h2 *ngIf="weather.city === ''">Your Location</h2>
+    <h2 *ngIf="weather.city !== ''">{{ weather.city }}</h2>
+    <div class="today">
+        <app-main-informations class="container"
+        [date]="today.date.toLocaleDateString()"
+        [minTemp]="today.mint"
+        [temp]="today.temp"
+        [maxTemp]="today.maxt"
+        [conditions]="today.conditions"></app-main-informations>
+        <app-secondary-informations class="container"
+        [sunRise]="today.sunrise.toLocaleTimeString('fr', { hour: 'numeric', hour12: true, minute: 'numeric' })"
+        [sunSet]="today.sunset.toLocaleTimeString('fr', { hour: 'numeric', hour12: true, minute: 'numeric' })"
+        [humidity]="today.humidity"
+        [windSpeed]="today.wspd"
+        [precipitation]="today.precip"></app-secondary-informations>
+    </div>
+    <div class="week">
+        <div *ngFor="let day of week" class="day">
+            <app-main-informations class="container"
+            [date]="day.date.toLocaleDateString()"
+            [minTemp]="day.mint"
+            [temp]="day.temp"
+            [maxTemp]="day.maxt"
+            [conditions]="day.conditions"></app-main-informations>
+        </div>
+    </div>
+</div>

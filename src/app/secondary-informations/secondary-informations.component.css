@@ -1,0 +1,31 @@
+.secondary-informations {
+
+    width: 100%;
+    margin-top: 25px;
+
+    /* center element */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+    @media screen and (max-width: 450px) {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.info {
+
+    /* center element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icone {
+
+    width: 25px;
+    margin-right: 10px;
+}

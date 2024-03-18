@@ -1,0 +1,72 @@
+.main-informations {
+
+    width: 100%;
+
+    /* center element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.date {
+
+    width: 100%;
+    margin: 15px auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    /* center element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conditions {
+
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px auto;
+
+    /* center element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temperatures {
+
+    width: 100%;
+    margin: 10px auto;
+
+    /* center element */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fork {
+
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.min {
+
+    color: #48beff;
+}
+
+.max {
+
+    color: #ff4747;
+}
+
+.average {
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
